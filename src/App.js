@@ -6,8 +6,9 @@ function App() {
     return ( <
         div >
         <
-        h1 > hello < /h1> <
-        p > my name is mayuri < /p> <
+        h1 > hello < /h1>
+
+        <
         Layout / >
         <
         /div>
