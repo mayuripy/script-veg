@@ -18,7 +18,9 @@ function Header() {
         <
         Typography color = { 'goldenrod' }
         variant = 'h6'
-        component = "div" >
+        component = "div"
+        sx = {
+            { flexGrow: 1 } } >
         <
         FastfoodIcon / >
         Crown <
@@ -26,26 +28,26 @@ function Header() {
         Toolbar >
         <
         Box sx = {
-            { displayL: { xs: "none", sm: "block" } } } >
+            { displayL: { xs: "none", sm: "block" } } }
+
+        >
         <
         ul classname = "navigation-menu" >
         <
-        li to = { "./" } > Home < /li> <
-        /ul> <
-        ul >
+        Link to = { "./" } > Home < /Link> <
+        li >
         <
         li to = { "../menu" } > Menu < /li> <
-        /ul> <
-        ul >
+        /li> <
+        li >
         <
         li to = { "../about" } > About < /li> <
-        /ul> <
-        ul >
+        /li> <
+        li >
         <
         li to = { "../contact" } > Contact < /li> <
-        /ul>
-
-        <
+        /li> <
+        /ul> <
         /Box> <
         /Toolbar> <
         /AppBar>
