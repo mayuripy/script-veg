@@ -9,11 +9,10 @@ function Header() {
         <
         Box / >
         <
-        AppBar vomponebt = { "nav" }
-        sax = {
+        AppBar Component = { "nav" }
+        sx = {
             { bgcolor: "black" } } >
-        <
-        Toolbar >
+
 
 
         <
@@ -22,9 +21,10 @@ function Header() {
         component = "div" >
         <
         FastfoodIcon / >
-        My Restrurent <
+        Crown <
         /Typography> <
-        /Toolbar> <
+        Toolbar >
+        <
         Box sx = {
             { displayL: { xs: "none", sm: "block" } } } >
         <
@@ -46,9 +46,8 @@ function Header() {
         /ul>
 
         <
-        /Box>
-
-        <
+        /Box> <
+        /Toolbar> <
         /AppBar>
 
 
