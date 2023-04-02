@@ -1,9 +1,27 @@
-import React from 'react'
-import { AppBar, Box, Toolbar, Typography } from "@mui/material"
+import React, { useState } from 'react'
+import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar, Box, IconButton, Toolbar, Typography, Dro } from "@mui/material"
 import FastfoodIcon from '@mui/icons-material/Fastfood'
 import { Link } from "react-router-dom"
+import { useState } from 'react';
+const Header = () => {
+    const [mobileopen, setmobileopen] = useState(false)
 
-function Header() {
+    const handalDrowerToggel = () => {
+        setmobileopen(!mobileopen)
+    }
+
+
+    const Drawer = ( <
+        Box onclick = { handalDrowerToggel }
+        sx = {
+            { taxtAlign: 'center' } } >
+
+
+
+        <
+        /Box>
+    )
     return ( <
         >
         <
@@ -12,7 +30,22 @@ function Header() {
         AppBar Component = { "nav" }
         sx = {
             { bgcolor: "black" } } >
-
+        <
+        Toolbar >
+        <
+        IconButton color = 'inherit'
+        aria - label = "open drawer"
+        edge = "start"
+        sx = {
+            {
+                mr: 2,
+                display: { sm: "none" },
+            }
+        } >
+        <
+        MenuIcon / >
+        <
+        /IconButton>
 
 
         <
@@ -24,8 +57,8 @@ function Header() {
         <
         FastfoodIcon / >
         Crown <
-        /Typography> <
-        Toolbar >
+        /Typography>
+
         <
         Box sx = {
             { displayL: { xs: "none", sm: "block" } } }
