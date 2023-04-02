@@ -1,15 +1,41 @@
 import './App.css';
-import Header from './components/Layout.js/Header';
-import Layout from './components/Layout.js/Layout';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from './pages/About';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Menu from './pages/Menu';
+import Pagenotfound from './pages/Pagenotfound';
 
 function App() {
     return ( <
         div >
         <
-        h1 > hello < /h1>
+        BrowserRouter >
+        <
+        Routes >
+        <
+        Route path = "./"
+        element = { < Home / > }
+        /> <
+        Route path = "./About"
+        element = { < About / > }
+        /> <
+        Route path = "./Contact"
+        element = { < Contact / > }
+        /> <
+        Route path = "./Menu"
+        element = { < Menu / > }
+        />
+
+
 
         <
-        Layout / >
+        /Routes>
+
+        <
+        /BrowserRouter>
+
+
         <
         /div>
     );

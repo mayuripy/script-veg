@@ -1,4 +1,4 @@
-import React, { children } from 'react'
+import React from 'react'
 import Header from './Header'
 //import Layout from './Layout'
 
@@ -6,10 +6,12 @@ const Layout = ({ children }) => {
     return ( <
         >
 
+
         <
         Header / >
+
         <
-        div > { children } < /div> <
+        div > { children } < /div>  <
         />
     )
 }

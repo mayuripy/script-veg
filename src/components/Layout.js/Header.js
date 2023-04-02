@@ -20,7 +20,7 @@ function Header() {
         variant = 'h6'
         component = "div"
         sx = {
-            { flexGrow: 1 } } >
+            { flexGrow: "1" } } >
         <
         FastfoodIcon / >
         Crown <
@@ -37,15 +37,15 @@ function Header() {
         Link to = { "./" } > Home < /Link> <
         li >
         <
-        li to = { "../menu" } > Menu < /li> <
+        Link to = { "../Menu" } > Menu < /Link> <
         /li> <
         li >
         <
-        li to = { "../about" } > About < /li> <
+        Link to = { "../About" } > About < /Link> <
         /li> <
         li >
         <
-        li to = { "../contact" } > Contact < /li> <
+        Link to = { "../Contact" } > Contact < /Link> <
         /li> <
         /ul> <
         /Box> <
