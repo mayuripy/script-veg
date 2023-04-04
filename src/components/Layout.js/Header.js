@@ -23,52 +23,64 @@ const Header = () => {
         sx = {
             { taxtAlign: "center" }
         } >
+
         <
         Box sx = {
             { displayL: { xs: "none", sm: "block" } }
         } >
+
         <
         ul classname = "mobile-navigation" >
+
         <
-        Link to = { "./" } > Home < /Link> <
+        Link to = { "./" } > Home < /Link>  <
         li >
+
         <
-        Link to = { "../Menu" } > Menu < /Link> < /
-        li > <
+        Link to = { "../Menu" } > Menu < /Link>  <
+        /li>  <
         li >
+
         <
-        Link to = { "../About" } > About < /Link> < /
-        li > <
+        Link to = { "../About" } > About < /Link>  <
+        /li>  <
         li >
+
         <
-        Link to = { "../Contact" } > Contact < /Link> < /
-        li > <
-        /ul> < /
-        Box > <
+        Link to = { "../Contact" } > Contact < /Link>  <
+        /li>  <
+        /ul>  <
+        /Box>  <
         /Box>
     );
     return ( <
-        >
         <
+        >
+
         Box / >
         <
         AppBar Component = { "nav" }
         sx = {
             { bgcolor: "black" }
         } >
+
         <
         Toolbar >
+
         <
-        IconButton color = "inherit"
+        color = "inherit"
         aria - label = "open drawer"
         edge = "start"
         sx = {
             { mr: 2, display: { sm: "none" } }
         } >
+
         <
         MenuIcon / >
+
         <
-        /IconButton>
+        / IconButton>
+
 
         <
         Typography color = { "goldenrod" }
@@ -77,36 +89,46 @@ const Header = () => {
         sx = {
             { flexGrow: "1" }
         } >
+
         <
         FastfoodIcon / >
         Crown <
         /Typography>
 
+
         <
         Box sx = {
             { displayL: { xs: "none", sm: "block" } }
         } >
+
         <
         ul classname = "navigation-menu" >
+
         <
-        Link to = { "./" } > Home < /Link> <
+        Link to = { "./" } > Home < /Link>  <
+        li >
+
+        <
+        Link to = { "../Menu" } > Menu < /Link>  <
+        / li >  <
+        li >
+
+        <
+        Link to = { "../About" } > About < /Link>  <
         li >
         <
-        Link to = { "../Menu" } > Menu < /Link> < /
-        li > <
+        li >
+
+        <
+        Link to = { "../Contact" } > Contact < /Link>  <
         li >
         <
-        Link to = { "../About" } > About < /Link> < /
-        li > <
-        li >
-        <
-        Link to = { "../Contact" } > Contact < /Link> < /
-        li > <
-        /ul> < /
-        Box > <
-        /Toolbar> < /
-        AppBar > <
+        /ul>  <
+        /Box>  <
+        /Toolbar>  <
+        /AppBar>  <
         Box >
+
         <
         Drawer variant = "temporary"
         open = { mobileopen }
@@ -120,10 +142,10 @@ const Header = () => {
                 },
             }
         } > { drawer } <
-        /Drawer> < /
-        Box > <
+        /Drawer>  <
+        /Box >  <
         />
     );
 };
 
-export default Header;
+export default Header
