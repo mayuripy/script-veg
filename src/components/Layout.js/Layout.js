@@ -7,12 +7,16 @@ const Layout = ({ children }) => {
         >
 
 
+
         <
         Header / >
 
+
         <
-        div > { children } < /div>  < /
-        >
+        div > { children } < /div>  <
+        footer / >
+        <
+        />
     )
 }
 

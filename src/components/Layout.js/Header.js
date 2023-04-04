@@ -54,10 +54,11 @@ const Header = () => {
         /Box>
     );
     return ( <
-        <
         >
 
+        <
         Box / >
+
         <
         AppBar Component = { "nav" }
         sx = {
@@ -68,7 +69,7 @@ const Header = () => {
         Toolbar >
 
         <
-        color = "inherit"
+        IconButton color = "inherit"
         aria - label = "open drawer"
         edge = "start"
         sx = {
@@ -79,7 +80,7 @@ const Header = () => {
         MenuIcon / >
 
         <
-        / IconButton>
+        /IconButton>
 
 
         <
@@ -144,6 +145,12 @@ const Header = () => {
         } > { drawer } <
         /Drawer>  <
         /Box >  <
+        Box sx {
+            { p: 1 } } >
+        <
+        Toolbar / >
+        <
+        /Box> <
         />
     );
 };
