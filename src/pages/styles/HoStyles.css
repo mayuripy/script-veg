@@ -1,0 +1,15 @@
+.home {
+    height: 90 vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headercontainer {
+    width: auto;
+    margin-left: 30px;
+}

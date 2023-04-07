@@ -6,7 +6,7 @@ import {
     IconButton,
     Toolbar,
     Typography,
-    Dro,
+    Drawer,
 } from "@mui/material";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import { Link } from "react-router-dom";
@@ -73,8 +73,9 @@ const Header = () => {
         aria - label = "open drawer"
         edge = "start"
         sx = {
-            { mr: 2, display: { sm: "none" } }
-        } >
+            { mr: 2, display: { sm: "none" }, }
+        }
+        onclick = { handalDrowerToggel } >
 
         <
         MenuIcon / >
@@ -116,18 +117,16 @@ const Header = () => {
 
         <
         Link to = { "../About" } > About < /Link>  <
-        li >
-        <
+        /li> <
         li >
 
         <
         Link to = { "../Contact" } > Contact < /Link>  <
-        li >
-        <
+        /li>  <
         /ul>  <
         /Box>  <
         /Toolbar>  <
-        /AppBar>  <
+        /AppBar> <
         Box >
 
         <
@@ -145,8 +144,7 @@ const Header = () => {
         } > { drawer } <
         /Drawer>  <
         /Box >  <
-        Box sx {
-            { p: 1 } } >
+        Box >
         <
         Toolbar / >
         <
@@ -155,4 +153,4 @@ const Header = () => {
     );
 };
 
-export default Header
+export default Header;
