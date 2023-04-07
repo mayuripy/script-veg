@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout.js/Layout'
-import { Button } from '@mui/material'
+//import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
+import Banner from "../images/banner.jpg";
 
 
 const Home = () => {
