@@ -1,14 +1,15 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../components/Layout.js/Header'
 
 function About() {
     return ( <
         div >
+
+
+       <Header/>
         
-        <Header />
-        
-        <h1> About </h1> 
-        </div >
+        <h1> About </h1>  
+        </div>
 
     )
 }

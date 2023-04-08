@@ -8,20 +8,21 @@
 body {
     font-family: "roboto", sans-serif;
 }
-.navigation-menu li a{
+
+.navigation-menu li a {
     text-decoration: none;
     color: white;
 }
 
-.mobile-navigation{
-list-style: none;
-
+.mobile-navigation {
+    list-style: none;
 }
-.mobile-navigation li{
+
+.mobile-navigation li {
     margin-top: 20px;
-
 }
-.mobile-navigation li a{
+
+.mobile-navigation li a {
     color: black;
     text-decoration: none;
     font-size: 4.1rem;
