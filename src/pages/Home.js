@@ -10,8 +10,9 @@ const Home = () => {
     <Layout>
       <Box
         width={'100vw'}
-        height={'40vh'}
-        mt={'80px'}
+        height={'60vh'}
+        mt={'60px'}
+  
         sx={{
           backgroundImage: `url(${Banner})`,
           backgroundRepeat: 'no-repeat',
@@ -19,20 +20,49 @@ const Home = () => {
           backgroundPosition: 'center right'
         }}
       >
-        <Typography 
-        textAlign={"center"}
-         marginTop={"10px"}
+        <Box 
+         marginBottom={'60px'}
+         alignItems={"left"}
+         justifyContent={"center"}
+         
         >
-          Food Website
+        <Typography 
+        justifyContent={"center"} 
+        fontSize={"45px"}
+        fontWeight={"bold"}
+        alignItems={"center"}
+        paddingTop={"70px"}
+        paddingLeft={"20px"}
+        
+
+        
+        > 
+           Food Website
         </Typography>
-        <Typography>
+        <Typography
+          fontSize={"40px"}
+          fontWeight={"bold"}
+          paddingLeft={"25px"}
+          
+
+          
+        >
           Best Food In India
         </Typography>
+        <Typography
+          fontSize={"20px"}
+          Color={"red"}
+          paddingLeft={"20px"}
+         >
         <Link
+          color={"goldenrod"}
+          fontSize="10px"
           to='/menu'
         >
           Order Now
         </Link>
+        </Typography>
+        </Box>
       </Box>
     </Layout>
   );

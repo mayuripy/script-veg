@@ -5,15 +5,15 @@ import {
   Box,
   Button,
   Drawer,
-  Fade,
   IconButton,
-  List,
-  Menu,
-  MenuItem,
   Toolbar,
   Typography,
 } from "@mui/material";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
+import CloseIcon from '@mui/icons-material/Close';
+import AddHomeIcon from '@mui/icons-material/AddHome';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -47,21 +47,24 @@ const Header = () => {
           <Drawer
             open={mobileopen}
             anchor="right"
+            
             sx={{
               width: '100vw',
-              height: '100vh',
+              height: '80vh',
               backdropFilter: 'blur(10px)',
               
-            }}
+            }}S
 
             PaperProps={{
               sx: {
+                 
                 backgroundColor: 'rgba(0, 0, 0, 0.9)',
-                width: '80vw',
+                width: '25vw',
+                height:"60vh",
                 display: 'flex',
               gap: '5vh',
               flexDirection: 'column',
-              py: 10
+              py: 3
               }
             }}
           >
@@ -85,12 +88,12 @@ const Header = () => {
 
           <IconButton>
             <Button
-              sx={{
-
-              }}
+              alignitem={"left"}
+              paddingx={"2px"}
+              marginTop={"20px"}
               onClick={() => setmobileopen(false)}
             >
-              Close
+              <CloseIcon />
             </Button>
           </IconButton>
             <Link
@@ -100,8 +103,11 @@ const Header = () => {
                 marginRight: "10px",
                 textDecorationLine: "none",
                 color: "white",
+              
               }}
             >
+              <AddHomeIcon />
+              
               Home
             </Link>
             <Link
@@ -113,6 +119,7 @@ const Header = () => {
                 color: "white",
               }}
             >
+              <MenuBookIcon />
               Menu
             </Link>
             <Link
@@ -134,7 +141,8 @@ const Header = () => {
                 textDecorationLine: "none",
                 color: "white",
               }}
-            >
+            > 
+              <ContactPageIcon />
               Contact
             </Link>
           {/* </Box> */}
@@ -188,6 +196,7 @@ const Header = () => {
             color: "white",
           }}
         >
+          
           Contact
         </Link>
       </Box>

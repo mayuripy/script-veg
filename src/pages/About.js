@@ -1,17 +1,20 @@
 import React from 'react'
-import Header from '../components/Layout.js/Header'
+import Layout from '../components/Layout.js/Layout'
+import { Box,Typography } from '@mui/material'
 
-function About() {
-    return ( <
-        div >
+const About = () => {
+    return ( 
+        <Layout>
+          <Box>
+            <Typography variant='h6'>Welcome To Crown Restrorant</Typography>
+
+          
 
 
-       <Header/>
-        
-        <h1> About </h1>  
-        </div>
+          </Box>
 
-    )
+        </Layout>
+     )
 }
 
 export default About
