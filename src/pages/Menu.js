@@ -1,15 +1,40 @@
-import React from 'react'
-import Layout from "../components/Layout.js/Layout"
+import React from "react";
+import { MenuList } from "../Data/data.js";
+import Layout from "../components/Layout.js/Layout";
+import {
+  Box,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 
-function Menu() {
-    return ( 
-        <Layout>
+const Menu = () => {
+  return (
+    <Layout>
+      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        {MenuList.map((menu) => (
+          <Card sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
+            <CardActionArea>
+              <CardMedia
+                sx={{ minHeight: "400px" }}
+                component={"img"}
+                src={menu.image}
+                alt={menu.name}
+              />
+              <CardContent>
+                <Typography variant="h5" gutterBottom component={"div"}>
+                  {menu.name}
+                </Typography>
+                <Typography variant="body2">{menu.description}</Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        ))}
+      </Box>
+    </Layout>
+  );
+};
 
-
-        
-        <h1> Menu card </h1>   
-        </Layout>
-    )
-}
-
-export default Menu
+export default Menu;
