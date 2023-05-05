@@ -14,6 +14,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import AddHomeIcon from '@mui/icons-material/AddHome';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import InfoIcon from '@mui/icons-material/Info';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -131,6 +132,7 @@ const Header = () => {
                 color: "white",
               }}
             >
+              <InfoIcon />
               About
             </Link>
             <Link
